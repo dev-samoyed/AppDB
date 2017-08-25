@@ -1,0 +1,29 @@
+﻿<Window x:Class="AppDB.AddPeople"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppDB"
+        mc:Ignorable="d"
+        Title="Добавить людей" Height="352.5" Width="702">
+    <Grid>
+        <TextBox x:Name="txt_firstName" HorizontalAlignment="Left" Height="33" Margin="139,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="txt_lastName" HorizontalAlignment="Left" Height="34" Margin="139,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="txt_workPhone" HorizontalAlignment="Left" Height="33" Margin="479,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <TextBox x:Name="txt_homePhone" HorizontalAlignment="Left" Height="34" Margin="479,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <TextBox x:Name="txt_adress" HorizontalAlignment="Left" Height="33" Margin="139,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="txt_birthday" HorizontalAlignment="Left" Height="33" Margin="139,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
+        <Label x:Name="firstname" Content="Имя" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="105" Height="33"/>
+        <Label x:Name="label1" Content="Фамилия" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Width="105" Height="34"/>
+        <Label x:Name="label2" Content="Адрес" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="105" Height="33"/>
+        <Label x:Name="label3" Content="Дата рождения" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top" Width="105" Height="33"/>
+        <Label x:Name="label4" Content="Рабочий телефон" HorizontalAlignment="Left" Margin="352,20,0,0" VerticalAlignment="Top" Height="33" Width="139"/>
+        <Label x:Name="label5" Content="Домашний телефон" HorizontalAlignment="Left" Margin="352,97,0,0" VerticalAlignment="Top" Height="28" Width="139"/>
+        <Button x:Name="button_addData" Content="Добавить" HorizontalAlignment="Left" Margin="380,192,0,0" VerticalAlignment="Top" Width="98" Height="33" Click="button_addData_Click"/>
+        <Button x:Name="button_closeAdd" Content="Закрыть" HorizontalAlignment="Left" Margin="559,239,0,0" VerticalAlignment="Top" Width="98" Height="33" Click="button_closeAdd_Click"/>
+        <Button x:Name="btn_update" Content="Обновить Базу данных"  HorizontalAlignment="Left" Margin="380,239,0,0" VerticalAlignment="Top" Width="146" Height="33" Click="btn_update_Click"/>
+        <Button x:Name="button" Content="Удалить" HorizontalAlignment="Left" Margin="510,192,0,0" VerticalAlignment="Top" Width="147" Height="33" Click="button_Click"/>
+        <Label x:Name="label" Content="Чтобы удалить, введите имя" HorizontalAlignment="Left" Margin="506,161,0,0" VerticalAlignment="Top" Width="176"/>
+
+    </Grid>
+</Window>
